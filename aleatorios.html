@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Aleatorios</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .contenedor {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+        }
+    </style>
+
+    <script src="utilitarios.js" defer></script>
+    <script src="aleatorios.js" defer></script>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Generador de números aleatorios</h1>
+
+        <p>Ingrese una cantidad entre 5 y 20:</p>
+
+        <input
+            type="number"
+            id="txtCantidad"
+            min="5"
+            max="20"
+            placeholder="Cantidad"
+        >
+
+        <button onclick="generarAleatorios()">
+            GENERAR
+        </button>
+
+        <div id="divResultados"></div>
+
+    </div>
+
+</body>
+</html>
